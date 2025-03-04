@@ -64,11 +64,24 @@ const Home: React.FC = () => {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="relative"
               >
-                <div className="w-64 h-64 md:w-80 md:h-80 relative">
-                  <div className="absolute inset-0 bg-zombie-red rounded-full opacity-20 animate-pulse-slow"></div>
-                  <div className="absolute inset-4 bg-zombie-gray rounded-full flex items-center justify-center">
-                    <Music className="h-32 w-32 text-zombie-red" />
-                  </div>
+                <img 
+                  src="https://images.unsplash.com/photo-1620428268482-cf1851a36764?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                  alt="Anime zombie girl with headphones" 
+                  className="relative rounded-lg shadow-xl z-10"
+                />
+                <div className="absolute -top-4 -right-4 text-zombie-red opacity-70">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M9 18V5l12-2v13"></path>
+                    <circle cx="6" cy="18" r="3"></circle>
+                    <circle cx="18" cy="16" r="3"></circle>
+                  </svg>
+                </div>
+                <div className="absolute -bottom-4 -left-4 text-zombie-red opacity-70 transform rotate-12">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M9 18V5l12-2v13"></path>
+                    <circle cx="6" cy="18" r="3"></circle>
+                    <circle cx="18" cy="16" r="3"></circle>
+                  </svg>
                 </div>
               </motion.div>
             </div>
@@ -165,6 +178,52 @@ const Home: React.FC = () => {
               author="GamingQueen"
               role="Community Manager"
             />
+          </div>
+        </div>
+      </section>
+      
+      {/* Anime Zombie Girl Section */}
+      <section className="py-16 bg-zombie-gray">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row items-center">
+            <div className="md:w-1/2 mb-8 md:mb-0">
+              <h2 className="text-3xl font-heading font-semibold mb-6">
+                Undead <span className="text-zombie-red">Beats</span>
+              </h2>
+              <p className="text-gray-300 mb-6">
+                Our mascot Zomi brings the undead energy to your Discord server with her killer music taste and haunting beats. She's always ready to drop the hottest tracks and keep your server members entertained.
+              </p>
+              <Button 
+                href="/features" 
+                variant="primary"
+              >
+                Discover More Features
+              </Button>
+            </div>
+            <div className="md:w-1/2 md:pl-12">
+              <div className="relative">
+                <div className="absolute inset-0 bg-zombie-red rounded-lg opacity-10 transform rotate-3"></div>
+                <img 
+                  src="https://images.unsplash.com/photo-1578632767115-351597cf2477?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                  alt="Anime zombie girl with headphones" 
+                  className="relative rounded-lg shadow-xl"
+                />
+                <div className="absolute top-4 right-4 text-zombie-red opacity-70">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M9 18V5l12-2v13"></path>
+                    <circle cx="6" cy="18" r="3"></circle>
+                    <circle cx="18" cy="16" r="3"></circle>
+                  </svg>
+                </div>
+                <div className="absolute bottom-4 left-4 text-zombie-red opacity-70 transform -rotate-12">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M9 18V5l12-2v13"></path>
+                    <circle cx="6" cy="18" r="3"></circle>
+                    <circle cx="18" cy="16" r="3"></circle>
+                  </svg>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
